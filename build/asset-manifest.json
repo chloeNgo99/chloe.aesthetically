@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chloe.aesthetically/static/css/main.ae5c5314.css",
+    "main.js": "/chloe.aesthetically/static/js/main.30039824.js",
+    "index.html": "/chloe.aesthetically/index.html",
+    "main.ae5c5314.css.map": "/chloe.aesthetically/static/css/main.ae5c5314.css.map",
+    "main.30039824.js.map": "/chloe.aesthetically/static/js/main.30039824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae5c5314.css",
+    "static/js/main.30039824.js"
+  ]
+}

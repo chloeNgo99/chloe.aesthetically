@@ -1,0 +1,142 @@
+.container>div {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: black;
+}
+
+
+.body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px 40px 10px 40px;
+    margin: 0px;
+}
+
+/* .container>div:nth-child(1n) {
+    background-color: #96ceb4;
+}
+
+.container>div:nth-child(2n) {
+    background-color: #88d8b0;
+}
+
+.container > div:nth-child(3n) {
+    background-color: #ff6f69;
+}
+
+.container>div:nth-child(4n) {
+    background-color: #ffcc5c;
+} */
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 570px 290px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    justify-content: left;
+}
+
+.media {
+    grid-column: 10/13;
+    justify-content: right;
+}
+
+.content {
+    grid-column: 1/-1;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.content iframe {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* .wrapper{
+    justify-content: center;
+    background-color: #DADAE8;
+    position: relative;
+    overflow: hidden;
+    padding-top: 650%;
+    width: 1200%;
+    height: 0;
+}
+
+.wrapper > iframe{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
+.footer {
+    grid-column: 1/-1;
+    justify-content: center;
+    font-size: small;
+
+    text-align: center;
+}
+
+.footer>h3 {
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: #743D16;
+    text-shadow: 4px 4px 2px white;
+}
+
+.About {
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+nav> a {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    padding-right: 40px;
+    color: black;
+    font-size: small;
+    font-weight: 700;
+}
+
+.social>img {
+    padding-left: 20px;
+}
+
+.github {
+    height: 25px;
+}
+
+.instagram {
+
+    height: 25px;
+}
+
+.mail {
+    height: 25px;
+}
