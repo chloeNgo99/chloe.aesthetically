@@ -12,9 +12,9 @@ export default function NavBar(){
 
     return(
         <nav>
-           <a className="home" href='/'>HOME</a>
-           <a className="project" href ='/Projects'>PROJECTS</a>
-           <a className="contact" href='/Contact'>CONTACT</a>
+           <a className="home" >HOME</a>
+           <a className="project">PROJECTS</a>
+           <a className="contact">CONTACT</a>
            <a className="update" href='/Update'>UPDATE</a>
         </nav>
     )

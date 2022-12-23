@@ -7,7 +7,7 @@ export default function Project() {
         <div className='body' style={{ background: "linear-gradient(to top left, #9ABCA2, #C2C1A2, #B8CFD3)" }}>
             <div className="container">
                 <div className="header">
-                    <NavBar />
+                    {/* <NavBar /> */}
                 </div>
                 <div className="media">
                     <Media />

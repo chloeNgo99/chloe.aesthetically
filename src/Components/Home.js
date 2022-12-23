@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import NavBar from "./NavBar"
 import Media from "./Media"
 import About from "./About"
-import Tittle from './Tittle';
 
 export default function Home() {
   return (
-    <div className='body' style={{background:"linear-gradient(to top left, #DBDBF3, #F6D3D7, #BFE1F4)"}}>
-      <div className="container">
+    //<div className='body' style={{background:"linear-gradient(to top left, #DBDBF3, #F6D3D7, #BFE1F4)"}}>
+      <>
         <div className="header">
           <NavBar/>
         </div>
@@ -15,13 +14,13 @@ export default function Home() {
           <Media />
         </div>
         <div className="content">
-          <Tittle />
+          <iframe src='https://my.spline.design/untitled-91de9edabf3cb964a13320761f4707fe/' frameborder='0'></iframe>
         </div>
-        <div class="footer">
+        <div class="about">
           <About />
         </div>
-      </div>
+      </>
 
-    </div>
+    //</div>
   );
 }

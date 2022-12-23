@@ -7,10 +7,13 @@
 
 
 .body {
+    display: flex;
     box-sizing: border-box;
+    align-items: center;
     height: 100%;
     padding: 10px 40px 10px 40px;
     margin: 0px;
+    transition: background-color 1s ease;
 }
 
 /* .container>div:nth-child(1n) {
@@ -27,29 +30,51 @@
 
 .container>div:nth-child(4n) {
     background-color: #ffcc5c;
+}
+
+.container>div:nth-child(5n) {
+    background-color: #757595;
+}
+
+.container>div:nth-child(6n) {
+    background-color: #a35e66;
+}
+
+.container>div:nth-child(7n) {
+    background-color: #9ed7d3;
 } */
 
 .container {
     height: 100%;
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 80px 570px 290px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px 570px 290px 400px 300px;
+    grid-template-areas: 
+    "h h h h m"
+    "c c c c c"
+    "f f f f f"
+    "p p p p p"
+    "d r r r r"
+    ;
 }
 
 .header {
-    grid-column-start: 1;
-    grid-column-end: 10;
+    /* grid-column-start: 1;
+    grid-column-end: 10; */
+    grid-area: h;
     justify-content: left;
 }
 
 .media {
-    grid-column: 10/13;
+    /* grid-column: 10/13; */
+    grid-area: m;
     justify-content: right;
 }
 
 .content {
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
+    grid-area: c;
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -67,35 +92,46 @@
     height: 100%;
 }
 
-/* .wrapper{
+.projectTitle{
+    /* grid-column: 1/-1; */
+    grid-area: p;
+    width: 100%;
+    height: 100%;
     justify-content: center;
-    background-color: #DADAE8;
+    margin-top: 3px;
     position: relative;
     overflow: hidden;
-    padding-top: 650%;
-    width: 1200%;
-    height: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 300px;
 }
 
-.wrapper > iframe{
-    position: absolute; 
-    top: 0;
+.project{
+    /* grid-column: 1/-1; */
+    grid-area: r;
+    margin-top: 3px;
+    justify-content: center;
+}
+
+.projectTitle > iframe{
+    position: absolute;
+    top: 0px;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
     height: 100%;
-  } */
+}
 
-.footer {
-    grid-column: 1/-1;
+.about {
+    /* grid-column: 1/-1; */
+    grid-area: f;
     justify-content: center;
     font-size: small;
-
     text-align: center;
 }
 
-.footer>h3 {
+.about> h3 {
     justify-content: center;
     align-items: center;
     font-size: x-large;
@@ -107,6 +143,12 @@
     justify-content: center;
     width: auto;
     height: auto;
+    font-size:larger;
+}
+
+.arrow{
+    grid-area: d;
+    justify-content: center;
 }
 
 nav {
