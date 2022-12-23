@@ -3,7 +3,7 @@ import LoremIpsum from "react-lorem-ipsum"
 
 export default function About() {
     return (
-        <div className="about">
+        <div className="about"> 
             <h3>About Me</h3>
             <div className="About">
                 <p>Hi, I’m Chloe 👋🏻😬 Welcome to my first 3D interactive website.

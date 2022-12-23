@@ -13,7 +13,7 @@ export default function Project() {
             <div className="projectTitle">
                 <iframe src='https://my.spline.design/untitled-395bfdcc45a5249808707742df2a9c95/' frameborder='0'></iframe>
             </div>
-            <div class="project">
+            <div class="project"> 
             </div>
         </>
 

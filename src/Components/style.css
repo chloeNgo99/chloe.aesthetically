@@ -106,7 +106,7 @@
     padding-top: 300px;
 }
 
-.project{
+.project{ 
     /* grid-column: 1/-1; */
     grid-area: r;
     margin-top: 3px;

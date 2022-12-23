@@ -8,7 +8,7 @@ export default function Home() {
     //<div className='body' style={{background:"linear-gradient(to top left, #DBDBF3, #F6D3D7, #BFE1F4)"}}>
       <>
         <div className="header">
-          <NavBar/>
+          <NavBar/>  
         </div>
         <div className="media">
           <Media />
