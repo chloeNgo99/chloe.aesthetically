@@ -20,28 +20,6 @@
     .container {
       flex-direction: column;
     }
-    .header{
-        order: 1;
-    }
-    .content{
-        order: 2;
-    }
-    .about{
-        order: 3;
-    }
-    .projectTitle{
-        order: 4;
-    }
-    .arrow{
-        order: 5;
-    }
-
-    .project{
-        order: 6;
-    }
-    .media{
-     order: 7;
-    }
 }
 
 /* .container>div:nth-child(1n) {
