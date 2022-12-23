@@ -16,6 +16,34 @@
     transition: background-color 1s ease;
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    .header{
+        order: 1;
+    }
+    .content{
+        order: 2;
+    }
+    .about{
+        order: 3;
+    }
+    .projectTitle{
+        order: 4;
+    }
+    .arrow{
+        order: 5;
+    }
+
+    .project{
+        order: 6;
+    }
+    .media{
+     order: 7;
+    }
+}
+
 /* .container>div:nth-child(1n) {
     background-color: #96ceb4;
 }
@@ -51,7 +79,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 80px 570px 290px 400px 300px;
     grid-template-areas: 
-    "h h h h m"
+    "h h h m m"
     "c c c c c"
     "f f f f f"
     "p p p p p"
@@ -64,6 +92,7 @@
     grid-column-end: 10; */
     grid-area: h;
     justify-content: left;
+    padding-top: 30px;
 }
 
 .media {
