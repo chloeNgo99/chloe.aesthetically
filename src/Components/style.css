@@ -17,12 +17,55 @@
 }
 
 @media screen and (max-width: 600px) {
+    /* .header{
+        order: 1;
+    }
+    .content{
+        order: 2;
+    }
+    .about{
+        order: 3;
+    }
+    .projectTitle{
+        order: 4;
+    }
+    .arrow{
+        order: 5;
+    }
+
+    .project{
+        order: 6;
+    }
+    .media{
+     order: 7;
+    } */
     .container {
-      flex-direction: column;
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 80px 570px 290px 400px 300px 80px;
+        grid-template-areas:
+            "h h h h h"
+            "c c c c c"
+            "f f f f f"
+            "p p p p p"
+            "d r r r r"
+            "m m m m m"
+        ;
+    }
+    .media {
+        /* grid-column: 10/13; */
+        /* grid-area: m; */
+        justify-content: center;
+    }
+
+    .About {
+        color: white;
     }
 }
 
-/* .container>div:nth-child(1n) {
+.container>div:nth-child(1n) {
     background-color: #96ceb4;
 }
 
@@ -48,7 +91,7 @@
 
 .container>div:nth-child(7n) {
     background-color: #9ed7d3;
-} */
+}
 
 .container {
     height: 100%;
@@ -56,12 +99,12 @@
     grid-gap: 3px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 80px 570px 290px 400px 300px;
-    grid-template-areas: 
-    "h h h m m"
-    "c c c c c"
-    "f f f f f"
-    "p p p p p"
-    "d r r r r"
+    grid-template-areas:
+        "h h h m m"
+        "c c c c c"
+        "f f f f f"
+        "p p p p p"
+        "d r r r r"
     ;
 }
 
@@ -99,7 +142,7 @@
     height: 100%;
 }
 
-.projectTitle{
+.projectTitle {
     /* grid-column: 1/-1; */
     grid-area: p;
     width: 100%;
@@ -113,14 +156,14 @@
     padding-top: 300px;
 }
 
-.project{ 
+.project {
     /* grid-column: 1/-1; */
     grid-area: r;
     margin-top: 3px;
     justify-content: center;
 }
 
-.projectTitle > iframe{
+.projectTitle>iframe {
     position: absolute;
     top: 0px;
     left: 0;
@@ -138,7 +181,7 @@
     text-align: center;
 }
 
-.about> h3 {
+.about>h3 {
     justify-content: center;
     align-items: center;
     font-size: x-large;
@@ -150,10 +193,10 @@
     justify-content: center;
     width: auto;
     height: auto;
-    font-size:larger;
+    font-size: larger;
 }
 
-.arrow{
+.arrow {
     grid-area: d;
     justify-content: center;
 }
@@ -164,7 +207,7 @@ nav {
     padding-bottom: 20px;
 }
 
-nav> a {
+nav>a {
     text-decoration: none;
     font-family: 'DM Sans';
     padding-right: 40px;
