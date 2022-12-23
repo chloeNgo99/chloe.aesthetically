@@ -65,7 +65,7 @@
     }
 }
 
-.container>div:nth-child(1n) {
+/* .container>div:nth-child(1n) {
     background-color: #96ceb4;
 }
 
@@ -91,7 +91,7 @@
 
 .container>div:nth-child(7n) {
     background-color: #9ed7d3;
-}
+} */
 
 .container {
     height: 100%;
