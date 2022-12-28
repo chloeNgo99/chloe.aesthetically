@@ -216,7 +216,7 @@ nav>a {
     font-weight: 700;
 }
 
-.social>img {
+.social > a {
     padding-left: 20px;
 }
 
@@ -229,6 +229,6 @@ nav>a {
     height: 25px;
 }
 
-.mail {
+.linkedin {
     height: 25px;
 }
