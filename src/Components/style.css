@@ -91,6 +91,10 @@
 
 .container>div:nth-child(7n) {
     background-color: #9ed7d3;
+}
+
+.container>div:nth-child(8n) {
+    background-color: #d8e89a;
 } */
 
 .container {
@@ -98,11 +102,12 @@
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 80px 570px 290px 400px 300px;
+    grid-template-rows: 80px 570px 290px 200px 500px 300px;
     grid-template-areas:
         "h h h m m"
         "c c c c c"
         "f f f f f"
+        "t t t t t"
         "p p p p p"
         "d r r r r"
     ;
@@ -142,25 +147,52 @@
     height: 100%;
 }
 
+.projectHeader{
+    grid-area: t;
+    justify-content: center;
+}
+
+.projectHeader > h1{
+    color: white;
+    font-family: dm-sans;
+}
+
 .projectTitle {
     /* grid-column: 1/-1; */
     grid-area: p;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     height: 100%;
-    justify-content: center;
+
+    /* justify-content: center;
     margin-top: 3px;
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    padding-top: 300px;
+    padding-top: 90px; */
 }
 
 .project {
     /* grid-column: 1/-1; */
     grid-area: r;
     margin-top: 3px;
+    justify-content: left;
+    align-items: left;
+}
+
+.project > ul{
+    font-size: large;
+    font-family: DM-Serif-Display;
     justify-content: center;
+}
+
+.projectDate{
+    color: white;
+    font-size: medium;
+    font-weight: 800;
 }
 
 .projectTitle>iframe {
@@ -179,12 +211,14 @@
     justify-content: center;
     font-size: small;
     text-align: center;
+    padding-bottom: 100px;
 }
 
-.about>h3 {
+.about > h1 {
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: xx-large;
+    font-weight: 600;
     color: #743D16;
     text-shadow: 4px 4px 2px white;
 }
@@ -194,10 +228,12 @@
     width: auto;
     height: auto;
     font-size: larger;
+    
 }
 
 .arrow {
     grid-area: d;
+    display: block;
     justify-content: center;
 }
 
@@ -231,4 +267,21 @@ nav>a {
 
 .linkedin {
     height: 25px;
+}
+
+.leftButton{
+    font-weight: bold;
+    margin-left: 30px;
+    border: none;
+    background-color: Transparent;
+    height: 40px;
+
+}
+
+.rightButton{
+    font-weight: bold;
+    margin-right: 30px;
+    border: none;
+    background-color: Transparent;
+    height: 40px;
 }

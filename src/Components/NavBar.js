@@ -12,8 +12,8 @@ export default function NavBar(){
 
     return(
         <nav>
-           <a className="home" >HOME</a>
-           <a className="project">PROJECTS</a>
+           <a className="home" href='#homeSection'>HOME</a>
+           <a className="project" href='#projectSection'>PROJECTS</a>
            <a className="contact">CONTACT</a>
            <a className="update" href='/Update'>UPDATE</a>
         </nav>

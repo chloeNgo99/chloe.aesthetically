@@ -1,23 +1,73 @@
 import React, { Component } from 'react';
-import NavBar from "./NavBar"
-import Media from "./Media"
+import data from '../data.js';
 
-export default function Project() {
+const Project = () => {
+    // const left = "<<";
+    // const right = ">>"
+
+    const [count, setCount] = React.useState(0);
+
+    const [dataList, setDataList] = React.useState({
+        title: data[count].title,
+        date: data[count].date,
+        description: data[count].description,
+        link: data[count].link
+    });
+
+    function rightHandle() {
+        if (count < 10) {
+            setCount(prevCount => prevCount + 1);
+            setDatafunction(count + 1);
+        }
+    }
+
+    function leftHandle() {
+        if (count > 0) {
+            setCount(prevCount => prevCount - 1);
+            setDatafunction(count - 1);
+        }
+    }
+
+    function setDatafunction(count) {
+        const arr = data;
+        const newDate = arr[count].date;
+        const newTitle = arr[count].title;
+        const newDes = arr[count].description;
+        const newLink = arr[count].link;
+        setDataList(prevData => ({
+            title: newTitle,
+            date: newDate,
+            description: newDes,
+            link: newLink
+        }));
+    }
+
+
     return (
-        //<div className='body' style={{ background: "linear-gradient(to top left, #C8E5FD, #F9DBE1, #F1EEDA)" }}>
-
         <>
-            <div className="arrow">
-                <p></p>
+            <div className='projectHeader' id ="projectSection">
+                <h1>{dataList.title}</h1>
             </div>
             <div className="projectTitle">
-                <iframe src='https://my.spline.design/untitled-395bfdcc45a5249808707742df2a9c95/' frameborder='0'></iframe>
+                <iframe src={dataList.link} frameborder='0'></iframe>
             </div>
-            <div class="project"> 
+            <div className="arrow">
+    
+                    <img className="leftButton" onClick={leftHandle} src=".img/up.png" />
+           
+          
+                    <img className="rightButton" onClick={rightHandle} src=".img/dowb.png" />
+    
+            </div>
+            <div class="project">
+                <ul>
+                    <p className='projectDate'>{dataList.date}</p>
+                    <p>{dataList.description}</p>
+                </ul>
             </div>
         </>
+    );
 
-        //</div>
-    )
+};
 
-}
+export default Project;
