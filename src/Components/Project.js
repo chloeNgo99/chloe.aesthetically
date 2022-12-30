@@ -56,7 +56,7 @@ const Project = () => {
                     <img className="leftButton" onClick={leftHandle} src="./images/up.png" />
            
           
-                    <img className="rightButton" onClick={rightHandle} src="./images/dowb.png" />
+                    <img className="rightButton" onClick={rightHandle} src="./images/down.png" />
     
             </div>
             <div class="project">
