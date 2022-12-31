@@ -53,10 +53,10 @@ const Project = () => {
             </div>
             <div className="arrow">
     
-                    <img className="leftButton" onClick={leftHandle} src="./images/up.png" />
+                    <img className="leftButton" onClick={leftHandle} src="./images/left.png" />
            
           
-                    <img className="rightButton" onClick={rightHandle} src="./images/down.png" />
+                    <img className="rightButton" onClick={rightHandle} src="./images/right.png" />
     
             </div>
             <div class="project">

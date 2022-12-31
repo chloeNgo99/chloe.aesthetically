@@ -17,7 +17,7 @@ const project = [
         id: 3,
         date: "February 2022 - March 2022",
         title: "HPurple Ebike System",
-        description: "Successful developed a complete software lifecycle by implementing Scrum model to design an ebike software system that provides affordable efficient and convenient ride-sharing services in metropolitan areas such as Seattle. Designing a high-level software system including collecting user stories, personas and understand user’s pain points. Define software requirements, design activity diagrams and software architecture diagrams.",
+        description: "Successful developed a complete software lifecycle by implementing Scrum model to design an ebike software system that provides affordable efficient and convenient ride-sharing services in metropolitan areas such as Seattle. Designing a high-level software system including collecting user stories, personas and understand user’s pain points.",
         link: "https://my.spline.design/untitled-395bfdcc45a5249808707742df2a9c95/"
     },
     {
