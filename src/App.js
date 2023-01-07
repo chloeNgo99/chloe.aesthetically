@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Contact from "./Components/Contact"
 import Project from './Components/Project';
 import Home from './Components/Home';
@@ -8,9 +8,39 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import "./Components/style.css"
 
 export default function App() {
+
+    const [scroll, setScroll] = useState(0);
+  
+    useEffect(() => {
+      function handleScroll() {
+        setScroll(window.pageYOffset);
+      }
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+    let bodyStyle = {};
+    bodyStyle.transition = 'background-color 0.5s ease';
+    if (scroll < 500) {
+      bodyStyle = { background: 'linear-gradient(to top left, #DEEAF0, #F5DDE0, #EAE5F3)' };
+      bodyStyle.transition = "background 1s ease-out";
+    } else if (scroll >= 500 && scroll < 1800) {
+      bodyStyle = { background: 'linear-gradient(to top left, #DFEBF5, #ECE0DC, #F8F3D9)' };
+      bodyStyle.transition = "background 1s ease-out";
+    } else {
+      bodyStyle = { background: 'linear-gradient(to top left, #CAE1E5, #D0E5DD, #F1F1D3)' };
+      bodyStyle.transition = "background 1s ease-out";
+    }
+  
+  
   return (
-    <div className='body' style={{ background: "linear-gradient(to top left, #DBDBF3, #F6D3D7, #BFE1F4)" }}>
+    <div className='body' style={bodyStyle}>
       {/* <div className="container">
+       style={{ background: "linear-gradient(to top left, #DBDBF3, #F6D3D7, #BFE1F4)" }}
         <div className="header">
           <NavBar/>
         </div>
@@ -26,7 +56,7 @@ export default function App() {
       </div> */}
       <div className='container'>
         <Home />
-        <Project />
+        <Project/>
         <Update/>
         <Contact />
       </div>

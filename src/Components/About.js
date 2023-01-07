@@ -7,7 +7,7 @@ export default function About() {
             <h1>About Me</h1>
             <div className="About">
                 <p>Hi, I’m Chloe 👋🏻😬 Welcome to my first 3D interactive website.
-                    I’m a student at the University of Washington. Even though I’m majoring in CS major, I’ve always enjoyed art since I was little. 
+                    I’m a student at the University of Washington. Even though I’m majoring in CS, I’ve always enjoyed art since I was little. 
                     (Fun fact about me, I’ve never participated in an art or design class) I love being creative and creating content that brings joy to others and makes them feel calm and relaxed. 
                     I’m so glad that you make it here! I hope you’ll have a cozy experience at my website!
                     <br/>

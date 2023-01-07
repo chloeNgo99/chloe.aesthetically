@@ -4,6 +4,7 @@ import Media from "./Media"
 import About from "./About"
 
 export default function Home() {
+
   return (
     //<div className='body' style={{background:"linear-gradient(to top left, #DBDBF3, #F6D3D7, #BFE1F4)"}}>
       <>
