@@ -26,13 +26,13 @@ export default function App() {
     let bodyStyle = {};
     bodyStyle.transition = 'background-color 0.5s ease';
     if (scroll < 500) {
-      bodyStyle = { background: 'linear-gradient(to top left, #DEEAF0, #F5DDE0, #EAE5F3)' };
+      bodyStyle = { background: 'linear-gradient(to top left, #DEEAF0, #F5DDE0, #F2EAFA)' };
       bodyStyle.transition = "background 1s ease-out";
     } else if (scroll >= 500 && scroll < 1800) {
       bodyStyle = { background: 'linear-gradient(to top left, #DFEBF5, #ECE0DC, #F8F3D9)' };
       bodyStyle.transition = "background 1s ease-out";
     } else {
-      bodyStyle = { background: 'linear-gradient(to top left, #CAE1E5, #D0E5DD, #F1F1D3)' };
+      bodyStyle = { background: 'linear-gradient(to top left, #C6E2F1, #EADFF5, #EADFF5)' };
       bodyStyle.transition = "background 1s ease-out";
     }
   

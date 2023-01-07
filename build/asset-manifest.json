@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/chloe.aesthetically/static/css/main.0f57eabe.css",
-    "main.js": "/chloe.aesthetically/static/js/main.aafb2942.js",
+    "main.js": "/chloe.aesthetically/static/js/main.40f1136f.js",
     "index.html": "/chloe.aesthetically/index.html",
     "main.0f57eabe.css.map": "/chloe.aesthetically/static/css/main.0f57eabe.css.map",
-    "main.aafb2942.js.map": "/chloe.aesthetically/static/js/main.aafb2942.js.map"
+    "main.40f1136f.js.map": "/chloe.aesthetically/static/js/main.40f1136f.js.map"
   },
   "entrypoints": [
     "static/css/main.0f57eabe.css",
-    "static/js/main.aafb2942.js"
+    "static/js/main.40f1136f.js"
   ]
 }
