@@ -24,7 +24,7 @@ export default function App() {
     }, []);
   
     let bodyStyle = {};
-    bodyStyle.transition = 'background-color 0.5s ease';
+    bodyStyle.transition = 'background-color 1.5s ease';
     if (scroll < 500) {
       bodyStyle = { background: 'linear-gradient(to top left, #DEEAF0, #F5DDE0, #F2EAFA)' };
       bodyStyle.transition = "background 1s ease-out";
