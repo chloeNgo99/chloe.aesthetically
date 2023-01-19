@@ -66,7 +66,7 @@ const project = [
         id:10,
         date: "October 2022 - December 2022",
         title: "Babs Burger Bonanza",
-        description: "Developedasoftwaresystemthatimprovedailyoperationsofthefoodtruck including customer services, managing logistics, sales, and inventory. Define food truck stakeholders and customer profile to understand business demographics. Create a high-quality set of software requirements and user stories. Design system architecture that fulfills key insight of system requirements.",
+        description: "Developed a software system that improve daily operations of the food dtruck including customer services, managing logistics, sales, and inventory. Define food truck stakeholders and customer profile to understand business demographics. Create a high-quality set of software requirements and user stories. Design system architecture that fulfills key insight of system requirements.",
         link : "https://my.spline.design/untitled-395bfdcc45a5249808707742df2a9c95/"
     },
     {
