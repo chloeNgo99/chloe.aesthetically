@@ -74,7 +74,7 @@ body {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 80px 570px 320px 300px 500px 300px 600px 70px 500px;
+    grid-template-rows: 80px 570px 400px 400px 500px 300px 600px 70px 500px;
     grid-template-areas:
         "h h h m m"
         "c c c c c"
@@ -147,6 +147,8 @@ body {
     width: auto;
     height: auto;
     font-size: larger;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .projectHeader {
@@ -156,7 +158,7 @@ body {
 }
 
 .projectHeader>h1 {
-
+    padding-top: 20%;
     color: white;
     font-family: dm-sans;
 }

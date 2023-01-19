@@ -5,14 +5,24 @@ export default function About() {
     return (
         <div className="about"> 
             <h1>About Me</h1>
+            
             <div className="About">
-                <p>Hi, I’m Chloe 👋🏻😬 Welcome to my first 3D interactive website.
-                    I’m a student at the University of Washington. Even though I’m majoring in CS, I’ve always enjoyed art since I was little. 
-                    (Fun fact about me, I’ve never participated in an art or design class) I love being creative and creating content that brings joy to others and makes them feel calm and relaxed. 
-                    I’m so glad that you make it here! I hope you’ll have a cozy experience at my website!
+                <p> Wow, hi there! I'm Chloe! 👋🏻😬 I am so excited to welcome you to my first 3D interactive website!
                     <br/>
                     <br/>
-                    Oh! By the way! The website is still in development stage 🤧 Hopefully I can complete it in Jan. But you can check out my Instagram for more cool stuff! I'll see you there!
+                    As a computer science major at the University of Washington, I have always had a burning passion for art and creativity. 
+                    I've never taken any formal classes in art, but that hasn't stopped me from pursuing my love for it. Now, I am thrilled 
+                    to finally have the opportunity to combine my technical skills with my passion for art and create something truly unique 
+                    and special for others to enjoy. I hope that you will find this website to be a cozy and relaxing place to explore.
+                    <br/>
+                    <br/>
+                    In the future, I am beyond excited to transition into full stack or front-end developer, so that I can continue to bring my passion for art 
+                    to the digital world and create even more amazing experiences for people.
+                    <br/>
+                    <br/>
+                    One more thing! The website is still in the development stage 🤧, but I am working hard to complete it by the end of Jan. 
+                    In the meantime, you can also check out my Instagram for more of my creative work! Thank you so much for visiting 
+                    and I can't wait for you to see there!
                 </p>
             </div>
 
