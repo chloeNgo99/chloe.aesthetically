@@ -107,6 +107,7 @@ body {
     /* grid-column: 1/-1; */
     grid-area: c;
     justify-content: center;
+    padding-bottom: -10%;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -158,7 +159,8 @@ body {
 }
 
 .projectHeader>h1 {
-    padding-top: 30%;
+    padding-top: 25%;
+    padding-top: 5%;
     color: white;
     font-family: dm-sans;
 }
