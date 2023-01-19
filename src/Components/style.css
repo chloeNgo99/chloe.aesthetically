@@ -38,6 +38,9 @@ body {
     .update > p{
         font-size: 40px;
     }
+    nav>a{
+        font-size: 15px;
+    }
 
 }
 /*
@@ -146,7 +149,8 @@ body {
     justify-content: center;
     font-size: small;
     text-align: center;
-    padding-bottom: 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .about > h1 {
@@ -336,6 +340,7 @@ nav>a {
     color: black;
     font-size: small;
     font-weight: 700;
+    font-size: 15px;
 }
 
 .social > a {
