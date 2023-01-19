@@ -22,7 +22,7 @@ export default function About() {
                     <br/>
                     One more thing! The website is still in the development stage 🤧, but I am working hard to complete it by the end of Jan. 
                     In the meantime, you can also check out my Instagram for more of my creative work! Thank you so much for visiting 
-                    and I can't wait for you to see there!
+                    and I can't wait to see you there!
                 </p>
             </div>
 
