@@ -336,11 +336,11 @@ nav {
 
 nav>a {
     text-decoration: none;
-    font-family: 'DM Sans';
+    font-family: DM-Serif-Display;
     padding-right: 40px;
     color: black;
     font-size: small;
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 15px;
 }
 
