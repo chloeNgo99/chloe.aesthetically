@@ -147,8 +147,8 @@ body {
     width: auto;
     height: auto;
     font-size: larger;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .projectHeader {
@@ -159,6 +159,7 @@ body {
 
 .projectHeader>h1 {
     padding-top: 20%;
+    padding-bottom: 20%;
     color: white;
     font-family: dm-sans;
 }
