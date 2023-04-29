@@ -74,7 +74,7 @@ body {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 80px 570px 400px 400px 500px 300px 600px 70px 500px;
+    grid-template-rows: 80px 570px 400px 300px 500px 300px 800px 70px 500px;
     grid-template-areas:
         "h h h m m"
         "c c c c c"
@@ -156,13 +156,16 @@ body {
     grid-area: t;
     justify-content: center;
     text-align: center;
+    /* background-color: #743D16; */
 }
 
 .projectHeader>h1 {
-    padding-top: 25%;
-    padding-top: 15%;
+    /* padding-top: 25%; */
+    /* padding-top: 15%; */
     color: white;
     font-family: dm-sans;
+    margin-top: 20%;
+    /* background-color: rgb(197, 144, 64); */
 }
 
 .projectTitle {
@@ -186,15 +189,16 @@ body {
 .project {
     /* grid-column: 1/-1; */
     grid-area: r;
-    margin-top: 3px;
     justify-content: center;
     align-items: left;
+    /* background-color: cornflowerblue; */
 }
 
 .project>ul {
     font-size: large;
     font-family: DM-Serif-Display;
     justify-content: center;
+    padding-bottom: 10%;
 }
 
 .projectDate {
@@ -217,16 +221,19 @@ body {
     grid-area: d;
     display: block;
     justify-content: center;
+    padding-bottom: 10%;
 }
 
 .update {
     grid-area: u;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
     font-family: DM-Serif-Display;
 }
-
-.update>p {
-    font-size: 40px;
+.update>h2 {
+    margin-top: 10%;
 }
 
 .contact {
@@ -235,11 +242,6 @@ body {
     justify-content: center;
     display: flex;
     letter-spacing: 0.1em;
-}
-
-.update {
-    grid-area: u;
-    justify-content: center;
 }
 
 .contact>h1 {

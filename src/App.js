@@ -26,7 +26,7 @@ export default function App() {
     let bodyStyle = {};
     bodyStyle.transition = 'background-color 1.5s ease';
     if (scroll < 500) {
-      bodyStyle = { background: 'linear-gradient(to top left, #DEEAF0, #F5DDE0, #F2EAFA)' };
+      bodyStyle = { background: 'linear-gradient(to top left, #EAD3E3, #FAC7D3, #D5D8ED)' };
       bodyStyle.transition = "background 1s ease-out";
     } else if (scroll >= 500 && scroll < 1800) {
       bodyStyle = { background: 'linear-gradient(to top left, #DFEBF5, #ECE0DC, #F8F3D9)' };
