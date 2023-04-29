@@ -15,7 +15,9 @@ export default function Home() {
           <Media />
         </div>
         <div className="content">
-          <iframe src='https://my.spline.design/untitled-91de9edabf3cb964a13320761f4707fe/' frameborder='0'></iframe>
+          <div className="iframContent">
+            <iframe src='https://my.spline.design/untitled-91de9edabf3cb964a13320761f4707fe/' frameborder='0'></iframe>
+          </div>  
         </div>
         <div class="about">
           <About />

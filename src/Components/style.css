@@ -74,7 +74,7 @@ body {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 80px 570px 400px 330px 500px 300px 800px 70px 500px;
+    grid-template-rows: 80px 500px 350px 330px 500px 300px 800px 70px 500px;
     grid-template-areas:
         "h h h m m"
         "c c c c c"
@@ -107,40 +107,41 @@ body {
     /* grid-column: 1/-1; */
     grid-area: c;
     justify-content: center;
-    padding-bottom: -10%;
+    /* padding-bottom: -10%; */
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 100%;
 }
 
-.content iframe {
+.iframContent iframe {
     position: absolute;
     top: 0px;
     left: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 95%;
+    /* background-color: rgb(24, 91, 91); */
 }
 
 .about {
-    /* grid-column: 1/-1; */
+    margin-top: 5%;
     grid-area: f;
     justify-content: center;
     font-size: small;
     text-align: center;
-    padding-top: 15%;
-    padding-bottom: 10%;
+    /* background-color: rgb(91, 127, 159); */
 }
 
 .about>h1 {
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
     font-weight: 600;
-    color: #743D16;
-    text-shadow: 4px 4px 2px white;
+    font-size: 350%;
+    font-family: dm-sans;
+    color: #ffffff;
+    /* text-shadow: 4px 4px 2px #743D16; */
 }
 
 .About {
@@ -162,9 +163,10 @@ body {
 .projectHeader>h1 {
     /* padding-top: 25%; */
     /* padding-top: 15%; */
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: dm-sans;
-    margin-top: 20%;
+    font-size: 200%;
+    padding-top: 10%;
     /* background-color: rgb(197, 144, 64); */
 }
 
@@ -202,7 +204,7 @@ body {
 }
 
 .projectDate {
-    color: white;
+    color: rgb(97, 39, 39);
     font-size: medium;
     font-weight: 800;
 }
