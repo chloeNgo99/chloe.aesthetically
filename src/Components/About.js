@@ -1,11 +1,23 @@
 import React from "react"
-import LoremIpsum from "react-lorem-ipsum"
+import Typed from 'typed.js';
 
 export default function About() {
+    React.useEffect(() => {
+        const typed = new Typed('.multiText', {
+            strings: ['Student', 'Developer', 'Content Creator', 'Designer'],
+            typeSpeed: 100,
+            backSpeed: 80,
+            loop: true,
+            backDelay: 1000
+        });
+        return () => {
+            typed.destroy();
+        }
+    }, [])
+   
     return (
         <div className="about"> 
-            <h1>About Me</h1>
-            
+            <h1>I'm a <span className="multiText" >Coder</span></h1>
             <div className="About">
                 <p> Wow, hi there! I'm Chloe! 👋🏻😬 I am so excited to welcome you to my first 3D interactive website!
                     <br/>

@@ -1,5 +1,5 @@
 {
-  "homepage" : " https://chloengo99.github.io/chloe.aesthetically",
+  "homepage": " https://chloengo99.github.io/chloe.aesthetically",
   "name": "interact-web-app",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "react-lorem-ipsum": "^1.4.10",
     "react-router-dom": "^6.6.0",
     "react-scripts": "^5.0.1",
+    "typed.js": "^2.0.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -19,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

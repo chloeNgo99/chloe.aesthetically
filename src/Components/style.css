@@ -143,6 +143,9 @@ body {
     color: #ffffff;
     /* text-shadow: 4px 4px 2px #743D16; */
 }
+.multiText{
+    color: #b78899;
+}
 
 .About {
     justify-content: center;
@@ -335,6 +338,10 @@ nav > a {
     font-size: small;
     font-weight: bolder;
     font-size: 15.5px;
+}
+
+nav > a:hover {
+    color: #ffffff;
 }
 
 .social>a {
