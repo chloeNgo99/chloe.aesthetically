@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 export default function About() {
     React.useEffect(() => {
         const typed = new Typed('.multiText', {
-            strings: ['Student', 'Developer', 'Content Creator', 'Designer'],
+            strings: ['Student', 'Coder', 'Content Creator', 'Designer'],
             typeSpeed: 100,
             backSpeed: 80,
             loop: true,
@@ -17,7 +17,7 @@ export default function About() {
    
     return (
         <div className="about"> 
-            <h1>I'm a <span className="multiText" >Coder</span></h1>
+            <h1>I'm a <span className="multiText" ></span></h1>
             <div className="About">
                 <p> Wow, hi there! I'm Chloe! 👋🏻😬 I am so excited to welcome you to my first 3D interactive website!
                     <br/>
