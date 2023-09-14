@@ -44,7 +44,7 @@ const Contact = () => {
         <form
           className="contact_form"
           method="POST"
-          action="https://formsubmit.co/7057a4e77b5519ef11231adb4a236cd9"
+          action="https://formsubmit.co/chloengo1704@gmail.com"
         >
           <div className="contact_form_group">
             <div className="contact_form_div">
