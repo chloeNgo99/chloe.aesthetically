@@ -1,0 +1,87 @@
+.aside{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background: var(--body-color);
+    border-bottom: 1px solid rgba(249, 170, 255, 0.2) ;
+    padding: 2.5rem;
+    height: 80px;
+    min-width: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+  }
+
+.nav_link{
+    font-size: 1.3rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+.active_link {
+    position: relative;
+}
+
+.active_link::before { 
+    content: '';
+    position: absolute;
+    bottom: -0.5rem; /* Adjust the distance as needed */
+    left: 50%; /* Center the dot horizontally */
+    transform: translateX(-50%); /* Center the dot using transform */
+    width: 5px; /* Adjust the width of the dot */
+    height: 5px; /* Adjust the height of the dot */
+    background-color: var(--first-color); /* Red color */
+    border-radius: 50%; /* Make it round */
+  
+    /* Use the same top value as the icon to align the dot vertically */
+    top: 100%; /* Position the dot below the icon */
+} 
+
+
+.nav_item {
+    margin-right: 50px;
+}
+
+.nav_toggle {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.875rem;
+    cursor: pointer;
+    height: 40px;
+    width: 45px;
+    display: none;
+    z-index: 1;
+    /* border: 1px solid #e8dfec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; */
+}
+
+/* Adjust this breakpoint as needed */
+@media screen and (max-width: 1024px) {
+    .aside {
+      display: none; /* Hide the navigation bar */
+    }
+    .nav_toggle {
+      display: flex; /* Display the toggle button */
+    }
+
+    .nav_toggle_open{
+        right: 140px;
+    }
+
+    .show_menu{
+        right: 0;
+    }
+}
+  
+

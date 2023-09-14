@@ -1,0 +1,289 @@
+.home{
+    position: relative; /* Add relative positioning to create stacking context */
+    z-index: 1; /* Ensure the social links are on top */
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    /* background-color: rgb(151, 173, 194); */
+}
+
+.intro__img{
+    height: 200px;
+    z-index: 1;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    z-index: 1;
+}
+
+/* .home__name{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold); 
+} */
+
+.home__name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold); 
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1;
+	color: transparent;
+	-webkit-text-stroke: 1.5px rgb(213, 255, 43);
+	text-shadow: 0 0 0 #9554ff;
+	transition: all 250ms;
+}
+
+.home__name:hover {
+	text-shadow: 4px 4px 0 #9554ff;
+	transform: translate(-2px, -2px)
+}
+
+.home__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the items horizontally */
+    gap: 1rem; /* Add a gap between the links */
+    width: 100%;
+}
+
+.social_link{
+    font-size: 1.7rem;
+    color: var(--title-color);
+    transition: .3s;
+    font-weight: var(--font-bold);
+    z-index: 1; /* Set a higher z-index value */
+}
+
+.social_link:hover{
+    color: rgb(202, 33, 228);
+}
+
+.btn{
+    z-index: 1;
+}
+
+.home_scroll{
+    color: var(--text-color);
+}
+
+.scroll_down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 2.5rem;
+    /* padding-top: 4rem; */
+    width: 100%;
+}
+
+
+.mouse {
+    border: 2px solid var(--text-color);
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 29%;
+    }
+    15% {
+        top: 50%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 29%;
+    }
+}
+
+.wheel{
+    background-color: var(--title-color);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.shapes{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0; /* Set a lower z-index value */
+}
+
+.shape{
+    position: absolute;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0.6); /* Initial size */
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1); /* Scaled size */
+        opacity: 1;
+    }
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px); /* Move the element upward slightly */
+        opacity: 0.8; /* Reduce opacity to make it appear slightly transparent */
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.s1{
+    left: 2%;
+    top: 15%;
+    animation: scaleAnimation 1s infinite alternate;
+}
+
+.s2{
+    right: 10%;
+    bottom: 8%;
+    animation: scaleAnimation 1.6s infinite alternate;
+}
+
+.s3{
+    left: 30%;
+    bottom: 15%;
+}
+
+.s4{
+    left: 10%;
+    bottom: 30%;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.s5{
+    right: 20%;
+    top: 40%;
+}
+
+.s6{
+    left: 25%;
+    top: 2%;
+    animation: floatAnimation 2.3s ease-in-out infinite;
+}
+
+.s7{
+    left: 25%;
+    top: 35%;
+}
+
+.s8{
+    right: 32%;
+    top: 2%;
+}
+
+.s9{
+    right: 5%;
+    top: 18%;
+    animation: floatAnimation 2s ease-in-out infinite;
+}
+
+.s10{
+    right: 25%;
+    bottom: 18%;
+    animation: floatAnimation 2.5s ease-in-out infinite;
+}
+
+.s11{
+    left: 5%;
+    bottom: 5%;
+    animation: scaleAnimation 1.7s infinite alternate;
+}
+
+.s12{
+    right:8%;
+    bottom: 32%;
+    animation: scaleAnimation 1.9s infinite alternate;
+}
+
+@media screen and (max-width: 1024px){
+    .social_link{
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .social_link{
+        font-size: 1.125rem;
+    }
+
+    .s5{
+        right: 18%;
+        top: 37%;
+    }
+    .s7{
+        left: 15%;
+        top: 35%;
+    }
+    .s10{
+        right: 15%;
+        bottom: 18%;
+        animation: floatAnimation 2.5s ease-in-out infinite;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .s5{
+        right: 10%;
+        top: 40%;
+    }
+    .s7{
+        left: 15%;
+        top: 35%;
+    }
+    .s10{
+        right: 12%;
+        bottom: 15%;
+        animation: floatAnimation 2.5s ease-in-out infinite;
+    }
+    .s4{
+        left: 8%;
+        bottom: 33%;
+        animation: floatAnimation 3s ease-in-out infinite;
+    }
+}
+
+/**
+.s4{
+    left: 10%;
+    bottom: 30%;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+*/
