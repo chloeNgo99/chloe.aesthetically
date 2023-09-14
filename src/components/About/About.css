@@ -138,10 +138,15 @@
     }
 
     .about_boxes{
+        padding-left: 30px;
         grid-template-columns: repeat(2, 150px);
         row-gap: 1rem;
         justify-content: center;
         align-items: center;
+    }
+    .about_box{
+        width: 85%; /* Set a fixed width for the divs */
+        height: 85%; /* Set a fixed height for the divs */
     }
 }
 
