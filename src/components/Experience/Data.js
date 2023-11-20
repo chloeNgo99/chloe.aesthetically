@@ -42,7 +42,7 @@ const Data = [
         year: "2023 - 2024",
         title: "Software Engineer Intern at AeyeSafe",
         location: "📍 Seattle, WA",
-        desc: "Up comming internship at AeyeSafe."
+        desc: "Designed real-time, streaming alert system for nursing homes and community automation using sensors, optimizing data processing with the AlertTrigger class, Redis, and Kafka, resulting in rapid retrieval of raw and simulated data for specific alerts."
     }
 
 ];

@@ -2,4 +2,154 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
+
+
+.star-container {
+    /* background-color: aliceblue; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0; /* Hide the overflowing parts of the shooting star */
+  }
+  
+  @keyframes meteor-drop {
+    0% {
+      transform: translate(0vw, 0vh) rotate(-45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(50vw, 70vh) rotate(-45deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the shooting star animation to the .shooting-star class */
+  .shooting-star {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50px;
+    left: 100px;
+    animation: meteor-drop 2s ease infinite;
+    animation-delay: 1.5s; /* Uncomment and adjust this for a delay */
+    transform: rotate(50deg);
+    opacity: 0;
+  }
+  
+  /* Style for the individual components of the shooting star */
+  .shooting-star div {
+    transition: all 0.5s ease;
+  }
+  
+  .shooting-star div:nth-child(1) {
+    background: linear-gradient(to top, #730F8E, transparent);
+    height: 150px;
+    width: 20px;
+    border-radius: 100px;
+    opacity: 0.8;
+    position: absolute;
+    left: -5.5px;
+    top: -96px;
+    z-index: -2;
+  }
+  
+  .shooting-star div:nth-child(2) {
+    width: 12px;
+    height: 100px;
+    background: linear-gradient(to top, #f9026d, transparent);
+    border-radius: 500px;
+    position: absolute;
+    opacity: 0.8;
+    left: -1.5px;
+    top: -53px;
+  }
+  
+  .shooting-star div:nth-child(3) {
+    width: 8px;
+    height: 8px;
+    background: #fedc01;
+    border-radius: 100px;
+    top: 35px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .shooting-star div:nth-child(4) {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid #fedc01;
+    z-index: 1;
+    top: 8px;
+    position: absolute;
+  }
+
+
+  /* shooting start 2 */
+  .shooting-star-2 {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 250px;
+    left: 10px;
+    animation: meteor-drop 1.5s ease infinite;
+    animation-delay: 1.8s; /* Uncomment and adjust this for a delay */
+    transform: rotate(40deg);
+    opacity: 0;
+  }
+  
+  /* Style for the individual components of the shooting star */
+  .shooting-star-2 div {
+    transition: all 0.5s ease;
+  }
+  
+  .shooting-star-2 div:nth-child(1) {
+    background: linear-gradient(to top, #730F8E, transparent);
+    height: 150px;
+    width: 20px;
+    border-radius: 100px;
+    opacity: 0.8;
+    position: absolute;
+    left: -5.5px;
+    top: -96px;
+    z-index: -2;
+  }
+  
+  .shooting-star-2 div:nth-child(2) {
+    width: 12px;
+    height: 100px;
+    background: linear-gradient(to top, #f9026d, transparent);
+    border-radius: 500px;
+    position: absolute;
+    opacity: 0.8;
+    left: -1.5px;
+    top: -53px;
+  }
+  
+  .shooting-star-2 div:nth-child(3) {
+    width: 8px;
+    height: 8px;
+    background: #fedc01;
+    border-radius: 100px;
+    top: 35px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .shooting-star-2 div:nth-child(4) {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid #fedc01;
+    z-index: 1;
+    top: 8px;
+    position: absolute;
+  }
+
+  
